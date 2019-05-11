@@ -9,3 +9,10 @@
         <title>AEAT</title>
     </head>
     <body>
+      <div id="navbar-header">
+        <div id="logo-div">
+    			<object data="img/logo.svg" type="image/svg+xml">
+    				<img src="img/logo.png" alt="Aeat Logo">
+    			</object>
+    		</div>
+      </div>
