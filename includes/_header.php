@@ -22,7 +22,6 @@
             </a>
       		</div>
           <a class="navbar-txt-item" id="home-btn-pullout-menu" href="index.php">Home</a>
-          <a class="navbar-txt-item" href="filters.php">Filters</a>
           <a class="navbar-txt-item" href="search.php">Search</a>
           <a class="navbar-txt-item" href="recipe.php">A Recipe</a>
           <a class="navbar-txt-item" href="help.php">Help</a>
@@ -42,7 +41,6 @@
         <div id="dd-menu-pullout-menu">
           <a class="menu-item" id="x-mark-pullout-menu" href="#">&#10005;</a>
           <a class="menu-item" id="home-btn-pullout-menu" href="index.php">Home</a>
-          <a class="menu-item" href="filters.php">Filters</a>
           <a class="menu-item" href="search.php">Search</a>
           <a class="menu-item" href="recipe.php">Random Recipe</a>
           <a class="menu-item" href="help.php">Help</a>

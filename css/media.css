@@ -67,6 +67,11 @@
   #footer-text {
     margin-top: 0.75em;
   }
+
+  #filter-icon {
+    width: 3%;
+    height: 3%;
+  }
 }
 
 @media screen and (min-width : 1024px) {
@@ -97,6 +102,11 @@
 
   #welcome-text {
     font-size: 3em;
+  }
+
+  #filter-icon {
+    width: 1.5%;
+    height: 1.5%;
   }
 }
 
@@ -203,5 +213,10 @@
 
   #welcome-text {
     font-size: 5em;
+  }
+
+  #filter-icon {
+    width: 1%;
+    height: 1%;
   }
 }

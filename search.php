@@ -2,7 +2,25 @@
   include "includes/functions.php";
   include "includes/_header.php";
 ?>
-<div id="lipsum-test">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div id="searchbar-div">
+  <img id="filter-icon" src="img/filter.png"></img>
+  <form id="search-form">
+    <input type="text" name="search">
+  </form>
+</div>
+<div id="filters-options">
+  <h4>Dietary Restrictions</h4>
+  <ul class="filter-ul">
+    <li>Vegan</li>
+    <li>Vegetarian</li>
+    <li>Pescatarian</li>
+    <li>Lactose Intolerant</li>
+    <li>Gluten-Free</li>
+  </ul>
+</div>
+<div id="main-desc" class="main-desc-search">
+  <h2 class="title">Sorry, but we couldn't find anything!</h2>
+  <p>Try checking your spelling. You can also try words with a similar meaning, like "tart" instead of "pie".
 </div>
 <?php include "includes/_footer.php"; ?>
