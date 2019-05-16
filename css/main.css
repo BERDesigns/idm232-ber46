@@ -202,6 +202,57 @@ a {
 
 /*
 ====================================
+           RECIPE PG
+====================================
+*/
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0 0 0.5em 0;
+}
+
+.later-recipe-img {
+  width: 100%;
+  margin: auto;
+}
+
+.recipe-ing {
+  margin-top: 0.5em;
+}
+
+.recipe-steps {
+  margin-bottom: 0;
+}
+
+.recipe-step-img {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.beginning-desc {
+  padding: 2em;
+  padding-top: 0.25em;
+  padding-bottom: 0em;
+  text-align: justify;
+}
+
+#recipe-first-line {
+  margin-bottom: 0.25em;
+}
+
+#recipe-second-line {
+  margin-top: 0em;
+}
+
+#last-step {
+  padding-bottom: 1em;
+}
+
+/*
+====================================
          FOOTER NAVBAR
 ====================================
 */

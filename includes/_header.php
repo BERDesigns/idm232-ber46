@@ -47,3 +47,4 @@
           <a class="menu-item" href="recipe.php">Random Recipe</a>
           <a class="menu-item" href="help.php">Help</a>
         </div>
+        <div id="main-pg">
