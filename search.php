@@ -20,7 +20,9 @@
   </ul>
 </div>
 <div id="main-desc" class="main-desc-search">
-  <h2 class="title">Sorry, but we couldn't find anything!</h2>
-  <p>Try checking your spelling. You can also try words with a similar meaning, like "tart" instead of "pie".
+  <div id="spacing-div-search-no-results">
+    <h2 class="title">Sorry, but we couldn't find anything!</h2>
+    <p>Try checking your spelling. You can also try words with a similar meaning, like "tart" instead of "pie".
+  </div>
 </div>
 <?php include "includes/_footer.php"; ?>
