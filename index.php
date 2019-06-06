@@ -15,11 +15,13 @@
   $rand_a = mt_rand(1, 40);
   $rand_b = mt_rand(1, 40);
   $rand_c = mt_rand(1, 40);
+  $rand_d = mt_rand(1, 40);
 
-  while(($rand_a == $rand_b) || ($rand_a == $rand_c) || ($rand_b == $rand_c)) {
+  while(($rand_a == $rand_b) || ($rand_a == $rand_c) || ($rand_a == $rand_d) || ($rand_b == $rand_c) || ($rand_b == $rand_d) || ($rand_c == $rand_d)) {
     $rand_a = mt_rand(1, 40);
     $rand_b = mt_rand(1, 40);
     $rand_c = mt_rand(1, 40);
+    $rand_d = mt_rand(1, 40);
   }
 
   for($i = 0; $i <= 3; $i++) {
@@ -31,9 +33,13 @@
     } elseif ($i == 1) {
       $temp_num = $rand_b;
       $query .= "WHERE id = '{$rand_b}' ";
-    } else {
+    } elseif ($i == 2) {
       $temp_num = $rand_c;
       $query .= "WHERE id = '{$rand_c}' ";
+    }
+    else {
+      $temp_num = $rand_d;
+      $query .= "WHERE id = '{$rand_d}' ";
     }
     $query .= 'LIMIT 1';
 
