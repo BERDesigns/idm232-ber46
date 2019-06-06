@@ -12,6 +12,20 @@
 </div>
 <div id="card-holder">
   <div class="card">
+    <img class="card-img" src="img/02_example_pic.png">
+    <div class="container">
+      <h4 class="title card-text">Parmesan-Crusted Chicken</h4>
+      <p class="card-text">with Mashed Sweet Potatoes & Roasted Broccoli</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img" src="img/03_example_pic.png">
+    <div class="container">
+      <h4 class="title card-text">Shiitake & Hoisin Beef Burgers</h4>
+      <p class="card-text">with Miso Mayonnaise & Roasted Sweet Potatoes</p>
+    </div>
+  </div>
+  <div class="card" id="last-card">
     <a href="recipe.php">
       <img class="card-img" src="img/01_example_pic.png">
       <div class="container">
@@ -19,20 +33,6 @@
         <p class="card-text">with Romaine & Orange Salad</p>
       </div>
     </a>
-  </div>
-  <div class="card">
-    <img class="card-img" src="img/02_example_pic.png">
-    <div class="container">
-      <h4 class="title card-text">Parmesan-Crusted Chicken</h4>
-      <p class="card-text">with Mashed Sweet Potatoes & Roasted Broccoli</p>
-    </div>
-  </div>
-  <div class="card" id="last-card">
-    <img class="card-img" src="img/03_example_pic.png">
-    <div class="container">
-      <h4 class="title card-text">Shiitake & Hoisin Beef Burgers</h4>
-      <p class="card-text">with Miso Mayonnaise & Roasted Sweet Potatoes</p>
-    </div>
   </div>
 </div>
 <?php include "includes/_footer.php"; ?>

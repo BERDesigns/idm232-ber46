@@ -25,4 +25,5 @@
     <p>Try checking your spelling. You can also try words with a similar meaning, like "tart" instead of "pie".
   </div>
 </div>
+<script src ="js/function_footer.js"></script>
 <?php include "includes/_footer.php"; ?>

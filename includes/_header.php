@@ -15,18 +15,18 @@
       <div class="wrapper">
         <div id="navbar-header">
           <div class="navbar-div" id="logo-div">
-      			<a href="index.php">
+      			<a id="logo-btn" href="index.php">
               <object id="logo-obj" data="img/logo.svg" type="image/svg+xml">
       				  <img src="img/logo.png" alt="Aeat Logo">
       			  </object>
             </a>
       		</div>
-          <a class="navbar-txt-item" id="home-btn-pullout-menu" href="index.php">Home</a>
-          <a class="navbar-txt-item" href="search.php">Search</a>
+          <a class="navbar-txt-item" href="index.php">Home</a>
+          <a class="navbar-txt-item" href="search.php">Browse</a>
           <a class="navbar-txt-item" href="recipe.php">A Recipe</a>
           <a class="navbar-txt-item" href="help.php">Help</a>
           <div class="navbar-div mobile-right-divs" id="search-div">
-            <a href="search.php">
+            <a id="search-btn" href="search.php">
               <object id="search-obj" data="img/search.svg" type="image/svg+xml">
         				<img src="img/search.png" alt="Search">
         			</object>
@@ -39,9 +39,9 @@
       		</div>
         </div>
         <div id="dd-menu-pullout-menu">
-          <a class="menu-item" id="x-mark-pullout-menu" href="#">&#10005;</a>
           <a class="menu-item" id="home-btn-pullout-menu" href="index.php">Home</a>
-          <a class="menu-item" href="search.php">Search</a>
+          <a class="menu-item" id="x-mark-pullout-menu" href="#">&#10005;</a>
+          <a class="menu-item" href="search.php">Browse</a>
           <a class="menu-item" href="recipe.php">Random Recipe</a>
           <a class="menu-item" href="help.php">Help</a>
         </div>
