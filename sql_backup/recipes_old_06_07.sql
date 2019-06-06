@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Jun 06, 2019 at 04:12 PM
--- Server version: 5.7.23-23
--- PHP Version: 7.2.7
+-- Host: 127.0.0.1:3306
+-- Generation Time: Jun 06, 2019 at 07:07 PM
+-- Server version: 5.7.26
+-- PHP Version: 7.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `theberde_aeat_proj`
+-- Database: `aeat-proj`
 --
 
 -- --------------------------------------------------------
@@ -28,8 +28,9 @@ SET time_zone = "+00:00";
 -- Table structure for table `recipes`
 --
 
-CREATE TABLE `recipes` (
-  `id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `recipes`;
+CREATE TABLE IF NOT EXISTS `recipes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(43) DEFAULT NULL,
   `side` varchar(42) DEFAULT NULL,
   `description` varchar(416) DEFAULT NULL,
@@ -40,8 +41,9 @@ CREATE TABLE `recipes` (
   `kitchen_tool` varchar(596) DEFAULT NULL,
   `tips` varchar(920) DEFAULT NULL,
   `steps` varchar(3029) DEFAULT NULL,
-  `recipe_folder` varchar(94) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `recipe_folder` varchar(94) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `recipes`
@@ -90,26 +92,6 @@ INSERT INTO `recipes` (`id`, `title`, `side`, `description`, `time`, `servings`,
 INSERT INTO `recipes` (`id`, `title`, `side`, `description`, `time`, `servings`, `nutrition`, `ingredients`, `kitchen_tool`, `tips`, `steps`, `recipe_folder`) VALUES
 (39, 'Top Chef Seared Grassfed Steaks', 'Sweet Chili-Glazed Vegetables', 'In this recipe, inspired by our Quickfire Challenge from Top Chef Season 15 on Bravo, simple grassfed steaks and rice get a sweet, tart, and spicy lift from glazed mushrooms and bok choy. Sliced radishes, softened a bit with lime juice, finish the dish off with subtle crunch.', 45, 4, 570, '2 Grassfed Strip Steaks\\\n4 oz Cremini Mushrooms\\\n1 1-Inch Piece Ginger\\\n2 Tbsps Sweet Chili Sauce\\', 'Large Maple Cutting Board\\\nby John Boos & Co. for Blue Apron\\\nBuilt to last, this chopping board is prized by professional chefs and so gorgeous we never want to take it off the counter. Crafted with hardy American maple, this exclusive collaboration between Blue Apron and John Boos & Co. is equal parts beautiful and handy. Its durable surface wonʼt warp and is resistant to scoring; magically, it also helps keep your blades sharper than other materials. Youʼll find these boards in our test kitchen-as well as professional kitchens around the world.\\', '', '1 Prepare the ingredients & make the glaze:\\\nWash and dry the fresh produce. Quarter the mushrooms. Peel and thinly slice the shallot. Peel and finely chop the ginger. Cut off and discard the root end of the bok choy; roughly chop. Quarter the lime. Cut off and discard the ends of the radishes; thinly slice into rounds. Place in a bowl and top with the juice of 1 lime wedge and a drizzle of olive oil; season with salt and pepper. Stir to coat. In a bowl, combine the ponzu sauce, sweet chili sauce, sugar, 1/4 cup of water, and as much of the soy marinade as you’d like.\\\n2 Cook the rice:\\\nIn a medium pot, combine the rice, a big pinch of salt, and 1 1/2 cups of water; heat to boiling on high. Once boiling, cover and reduce the heat to low. Cook 12 to 14 minutes, or until the water has been absorbed and the rice is tender. Turn off the heat and fluff with a fork. Cover to keep warm.\\\n3 Cook the steaks:\\\nWhile the rice cooks, pat the steaks dry with paper towels; season with salt and pepper on both sides. In a large pan, heat 2 tablespoons of olive oil on medium-high until hot. Add the seasoned steaks and cook 4 to 5 minutes per side for medium-rare, or until browned and cooked to your desired degree of doneness. Leaving any browned bits (or fond) in the pan, transfer to a cutting board and let rest for at least 5 minutes.\\\n4 Cook the vegetables:\\\nWhile the steaks rest, add 1 tablespoon of olive oil to the pan of reserved fond; heat on medium-high until hot. Add the quartered mushrooms in an even layer. Cook, without stirring, 3 to 4 minutes, or until lightly browned and slightly softened. Add the sliced shallot and chopped ginger; season with salt and pepper. Cook, stirring constantly, 30 seconds to 1 minute, or until fragrant.\\\n5 Glaze the vegetables:\\\nAdd the glaze and chopped bok choy to the pan; season with salt and pepper. Cook, stirring occasionally, 4 to 5 minutes, or until the glaze is slightly thickened and the vegetables have softened. Turn off the heat and stir in the juice of the remaining lime wedges. Season with salt and pepper to taste.\\\n6 Slice the steaks & serve your dish:\\\nFind the lines of muscle (or grain) on the rested steaks; thinly slice crosswise against the grain. Serve the sliced steaks with the cooked rice and glazed vegetables. Garnish with the marinated radishes (draining before adding). Enjoy!\\', 'Recipe_Top_Chef_Seared_Grassfed_Steaks_with_Sweet_Chili-Glazed_Vegetables'),
 (40, 'Tuscan Chicken & Green Lentil Stew', 'Goat Cheese', 'In this comforting cold-weather recipe, weʼre serving Tuscan-spiced chicken over tender green lentils and vegetables cooked in a light, savory tomato broth. Capers and crushed red pepper add briny flavor and a touch of heat to cut through the rich, earthy stew. (Chefs, rinsing the lentils after cooking removes excess starch, resulting in a more delicate flavor.', 55, 2, 580, '2 Boneless, Skinless Chicken Breasts\\\n2 Carrots\\\n1 Red Onion\\\n2 cloves Garlic\\\n½ cup French Green Lentils\\\n1 bunch Collard Greens\\\n2 Tbsps Tomato Paste\\\n¼ tsp Crushed Red Pepper Flakes\\\n1 Tbsp Capers\\\n1 Tbsp Apple Cider Vinegar\\\n2 Tbsps Crumbled Goat Cheese\\\n1 Tbsp Tuscan Spice Blend (Ground Fennel Seeds, Whole Fennel Seeds, Ground Rosemary, & Ground Sage)\\', 'Stainless Steel Strainer\\\nA stainless steel strainer is a handy tool for quinoa. It\'s great for draining grains and pastas (not to mention small fruits and vegetables after washing) and straining stocks and gravy. Lightweight and sturdy, itʼs constructed with a double-fine mesh.\\', 'How To: Separate Leafy Greens from the Stems\\\nCheck out this simple trick for separating the stems and leaves of one of our favorite ingredients: kale. You won\'t even need a knife!\\', '1 Cook the lentils:\\\nHeat a medium pot of salted water to boiling on high. Once boiling, add the lentils and cook, uncovered, 27 to 29 minutes, or until tender. Drain thoroughly and rinse under warm water 30 seconds to 1 minute, or until the water runs clear.\\\n2 Prepare the ingredients:\\\nWhile the lentils cook, wash and dry the fresh produce. Peel and thinly slice the onion. Peel and roughly chop the garlic. Peel and medium dice the carrots. Roughly chop the capers. Remove and discard the stems of the collard greens; roughly chop the leaves.\\\n3 Cook the chicken:\\\nWhile the lentils continue to cook, pat the chicken dry with paper towels; season on both sides with salt, pepper, and half the spice blend. In a large pan, heat 2 teaspoons of olive oil on medium-high until hot. Add the seasoned chicken and cook 5 to 7 minutes per side, or until browned and cooked through. Leaving any browned bits (or fond) in the pan, transfer to a cutting board.\\\n4 Cook the vegetables:\\\nAdd the sliced onion, chopped garlic, and diced carrots to pan of reserved fond; season with salt and pepper. (If the pan seems dry, add 2 teaspoons of olive oil.) Cook on medium-high, stirring frequently, 4 to 5 minutes, or until softened and fragrant. Add the tomato paste, chopped capers, remaining spice blend, and as much of the red pepper flakes as you’d like, depending on how spicy you’d like the dish to be. Cook, stirring constantly, 30 seconds to 1 minute, or until dark red and fragrant. Add the chopped collard greens and 2 cups of water; season with salt and pepper. Cook, stirring occasionally and scraping up any fond, 8 to 9 minutes, or until the collard greens have wilted and the liquid has thickened. Turn off the heat.\\\n5 Slice the chicken & serve your dish:\\\nSlice the cooked chicken crosswise. Add the cooked lentils and vinegar to the pan of cooked vegetables. Stir to combine. Season with salt and pepper to taste. Serve the finished lentils and vegetables topped with the sliced chicken. Garnish with the cheese. Enjoy!\\', 'Recipe_Tuscan_Chicken_Green_Lentil_Stew_with_Goat_Cheese');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `recipes`
---
-ALTER TABLE `recipes`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `recipes`
---
-ALTER TABLE `recipes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
