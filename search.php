@@ -1,6 +1,5 @@
 <?php
-  include "includes/functions.php";
-  include "includes/_header.php";
+  include "includes/init.php";
 ?>
 
 <div id="searchbar-div">

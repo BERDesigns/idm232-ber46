@@ -23,7 +23,7 @@
       		</div>
           <a class="navbar-txt-item" href="index.php">Home</a>
           <a class="navbar-txt-item" href="search.php">Browse</a>
-          <a class="navbar-txt-item" href="recipe.php">A Recipe</a>
+          <a class="navbar-txt-item" href="recipe.php?id=<?php echo mt_rand(1, 40);?>">A Recipe</a>
           <a class="navbar-txt-item" href="help.php">Help</a>
           <div class="navbar-div mobile-right-divs" id="search-div">
             <a id="search-btn" href="search.php">
@@ -42,7 +42,7 @@
           <a class="menu-item" id="home-btn-pullout-menu" href="index.php">Home</a>
           <a class="menu-item" id="x-mark-pullout-menu" href="#">&#10005;</a>
           <a class="menu-item" href="search.php">Browse</a>
-          <a class="menu-item" href="recipe.php">Random Recipe</a>
+          <a class="menu-item" href="recipe.php?id=<?php echo mt_rand(1, 40);?>">Random Recipe</a>
           <a class="menu-item" href="help.php">Help</a>
         </div>
         <div id="main-pg">

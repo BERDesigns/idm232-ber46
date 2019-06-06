@@ -1,6 +1,5 @@
 <?php
-  include "includes/functions.php";
-  include "includes/_header.php";
+  include "includes/init.php";
 ?>
   <div class="recipe-head">
     <img class="card-img recipe-header-img grid-area" src="img/01_example_pic.png">

@@ -1,6 +1,5 @@
 <?php
-  include "includes/functions.php";
-  include "includes/_header.php";
+  include "includes/init.php";
 ?>
 <div id="main-desc" class="main-desc-help-pg">
   <h2 class="title" id="faq-title">Frequently Asked Questions</h2>
