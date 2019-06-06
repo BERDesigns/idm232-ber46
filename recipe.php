@@ -21,7 +21,7 @@
   while ($recipe = mysqli_fetch_assoc($result)) {
 ?>
   <div class="recipe-head">
-    <img class="card-img recipe-header-img grid-area" src="img/recipe_pics/<?php echo $recipe['recipe_folder']; ?>/recipe_header.png">
+    <img class="card-img recipe-header-img grid-area" src="img/recipe_pics/<?php echo $recipe['recipe_folder']; ?>/beauty_pic.jpg">
     <div class="beginning-desc">
       <h3 id="recipe-first-line" class="title"><?php echo $recipe['title']; ?></h3>
       <h4 id="recipe-second-line">with <?php echo $recipe['side']; ?></h4>
@@ -51,7 +51,7 @@
       $cur_step = $i/2+1; //Finding the current step # by taking the substrings with '\' divided by 2, then normalizing by adding 1.
   ?>
   <div class="pic-step-combo-<?php echo $cur_step; ?> grid-area card-step">
-    <img class="card-img later-recipe-img recipe-step-img card-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']; ?>/step_<?php echo $cur_step; ?>.png">
+    <img class="card-img later-recipe-img recipe-step-img card-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']; ?>/step_<?php if ($cur_step <= 9 ) { $cur_step_str ='0'; } $cur_step_str .= $cur_step; echo $cur_step_str; ?>.jpg">
     <div class="container-step">
       <h4 class="title recipe-steps"><?php echo $step_string_array[$i]; ?></h4>
       <p><?php echo $step_string_array[$i+1]; ?></p>

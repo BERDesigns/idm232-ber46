@@ -56,7 +56,7 @@
       ?>
       <div class="card">
         <a href="recipe.php?id=<?php echo $recipe['id'] ?>">
-          <img class="card-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']?>/beauty_pic.png">
+          <img class="card-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']?>/beauty_pic.jpg">
           <div class="container">
             <h4 class="title card-text"><?php echo $recipe['title']; ?></h4>
             <p class="card-text">with <?php echo $recipe['side']; ?></p>
