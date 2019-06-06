@@ -85,6 +85,10 @@
     width: 3%;
     height: 3%;
   }
+
+  .ingredients-list-div {
+    padding-bottom: 2em;
+  }
 }
 
 @media screen and (min-width : 1024px) {

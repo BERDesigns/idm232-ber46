@@ -17,4 +17,6 @@
         ' )' . mysqli_connect_errno() . ')'
     );
   }
+
+  mysqli_set_charset($connection,"utf8");
 ?>

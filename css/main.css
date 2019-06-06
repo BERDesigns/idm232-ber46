@@ -2,6 +2,7 @@ html {
   --main-bg-color: royalblue;
   --tert-bg-color: mediumblue;
   --main-accent-color: snow;
+  --tert-accent-color: floralwhite;
   --title-font: 'Montserrat', sans-serif;
   --desc-font: 'Raleway', sans-serif;
 }
@@ -116,6 +117,7 @@ details[open] summary::-webkit-details-marker {
   width: 90%;
   height: 100%;
   z-index: 200;
+  box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
   transition: left 0.3s ease-in-out;
 }
 
@@ -217,6 +219,7 @@ details[open] summary::-webkit-details-marker {
   margin-left: 2em;
   margin-right: 2em;
   border-radius: 20px;
+  background-color: var(--main-accent-color);
 }
 
 .card-img {
@@ -245,6 +248,10 @@ details[open] summary::-webkit-details-marker {
            RECIPE PG
 ====================================
 */
+*
+.recipe-header-img {
+  border-radius: 0;
+}
 
 ul {
   padding-left: 0;
@@ -288,8 +295,14 @@ li {
 }
 
 .card-step {
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin-bottom: 2em;
+}
+
+.card-img-ings {
+  object-fit: contain;
+  max-height: 100% !important;
 }
 
 .container-step {
@@ -299,6 +312,10 @@ li {
 .recipe-steps {
   text-align: left;
   margin-top: 0.75em;
+}
+
+.ingredients-list-div {
+  padding-bottom: 1em;
 }
 
 /*

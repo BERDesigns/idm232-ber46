@@ -30,7 +30,7 @@
   </div>
   <div id="main-desc" class="main-desc-recipe">
   <div class="ingredients-img-div grid-area">
-    <img class="card-img later-recipe-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']; ?>/ingredients.png">
+    <img class="card-img card-img-ings later-recipe-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']; ?>/ingredients.png">
   </div>
   <div class="ingredients-list-div grid-area">
     <h3 class="title recipe-ing">Ingredients</h3>

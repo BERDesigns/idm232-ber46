@@ -23,7 +23,7 @@
       		</div>
           <a class="navbar-txt-item" href="index.php">Home</a>
           <a class="navbar-txt-item" href="search.php">Browse</a>
-          <a class="navbar-txt-item" href="recipe.php?id=<?php echo mt_rand(1, 40);?>">Random Recipe</a>
+          <a class="navbar-txt-item" href="recipe.php?id=<?php echo mt_rand(1, 40);?>">A Recipe</a>
           <a class="navbar-txt-item" href="help.php">Help</a>
           <div class="navbar-div mobile-right-divs" id="search-div">
             <a id="search-btn" href="search.php">
