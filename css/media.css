@@ -62,9 +62,13 @@
     max-width: 960px;
   }
 
-  #card-holder {
+  .card-holder {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .card-holder-end {
+    grid-template-rows: auto;
   }
 
   #last-card {
@@ -126,8 +130,8 @@
     font-size: 1em;
   }
 
-  #card-holder {
-    grid-template-columns: repeat(3, 1fr);
+  .card-holder {
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
   }
 

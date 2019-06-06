@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--main-accent-color);
   font-family: var(--desc-font);
 }
@@ -198,7 +199,7 @@ details[open] summary::-webkit-details-marker {
   background-color: var(--tert-bg-color);
 }
 
-#card-holder {
+.card-holder {
   display: grid;
   justify-items: center;
   width: 100%;
@@ -395,13 +396,22 @@ li {
   padding-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
-  position: fixed;
+  position: absolute;
   top: -50%;
   transition: all 0.3s ease-in-out;
 }
 
 #filters-options h4 {
   margin: 0;
+}
+
+.card-holder-search {
+  margin-bottom: 0em;
+}
+
+.results-holder {
+  margin-top: 1em;
+  transition: all 0.3s ease-in-out 0.15s;
 }
 
 /*

@@ -9,7 +9,7 @@
   <a id="amazing-btn" href="recipe.php?id=<?php echo mt_rand(1, 40);?>">make something amazing!</a>
   <p>Still don't know where to start? Why not try out one of these curated recipes:</p>
 </div>
-<div id="card-holder">
+<div class="card-holder">
 <?php
 
   $rand_a = mt_rand(1, 40);
@@ -22,7 +22,7 @@
     $rand_c = mt_rand(1, 40);
   }
 
-  for($i = 0; $i <= 2; $i++) {
+  for($i = 0; $i <= 3; $i++) {
     $query = 'SELECT * ';
     $query .= 'FROM recipes ';
     if ($i == 0) {
@@ -39,9 +39,13 @@
 
     $result = mysqli_query($connection, $query);
 
+    if (!$result) {
+      die('Database query failed.');
+    }
+
     while ($recipe = mysqli_fetch_assoc($result)) {
 ?>
-  <div class="card" <?php if($i == 2) { echo 'id="last-card"'; } ?>>
+  <div class="card">
     <a href="recipe.php?id=<?php echo $temp_num ?>">
       <img class="card-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']?>/beauty_pic.png">
       <div class="container">
