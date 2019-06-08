@@ -1,6 +1,10 @@
 <?php
   include "includes/init.php";
 
+  echo "<title>AEAT | Home</title>";
+
+  include "includes/_header_b.php";
+
   $query = 'SELECT * ';
   $query .= 'FROM recipes ';
 

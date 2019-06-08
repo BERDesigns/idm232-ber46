@@ -1,5 +1,9 @@
 <?php
   include "includes/init.php";
+
+  echo "<title>AEAT | Help</title>";
+
+  include "includes/_header_b.php";
 ?>
 <div id="main-desc" class="main-desc-help-pg">
   <h2 class="title" id="faq-title">Frequently Asked Questions</h2>

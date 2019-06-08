@@ -22,7 +22,13 @@
       redirect_to("index.php");
     }
   }
+
   while ($recipe = mysqli_fetch_assoc($result)) {
+
+    $cur_recipe_title = $recipe['title'];
+    echo "<title>AEAT | $cur_recipe_title</title>";
+
+    include "includes/_header_b.php";
 ?>
   <div class="recipe-head">
     <img class="card-img recipe-header-img grid-area" src="img/recipe_pics/<?php echo $recipe['recipe_folder']; ?>/beauty_pic.jpg">

@@ -81,8 +81,8 @@
   }
 
   #filter-icon {
-    width: 3%;
-    height: 3%;
+    width: 1.1em;
+    height: 1.1em;
   }
 
   #results-num {
@@ -121,8 +121,8 @@
   }
 
   #filter-icon {
-    width: 1.5%;
-    height: 1.5%;
+    width: 1.1em;
+    height: 1.1em;
   }
 }
 
@@ -213,6 +213,17 @@
  .pic-step-combo-4 { grid-area: step-4; }
  .pic-step-combo-5 { grid-area: step-5; }
  .pic-step-combo-6 { grid-area: step-6; }
+
+ /*
+ ====================================
+            RECIPE PG
+ ====================================
+ */
+
+  #filter-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
 }
 
 @media screen and (min-width : 1400px) {
@@ -234,10 +245,5 @@
 
   #welcome-text {
     font-size: 5em;
-  }
-
-  #filter-icon {
-    width: 1%;
-    height: 1%;
   }
 }

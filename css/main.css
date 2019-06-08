@@ -368,8 +368,8 @@ li {
 }
 
 #filter-icon {
-  width: 5%;
-  height: 5%;
+  width: 1.3em;
+  height: 1.3em;
   padding-left: 0.5em;
   padding-right: 1em;
   cursor: pointer;
@@ -420,7 +420,8 @@ li {
   padding-right: 1em;
   position: absolute;
   top: -50%;
-  transition: all 0.3s ease-in-out;
+  z-index: -10;
+  transition: top 0.3s ease-in-out;
 }
 
 #filters-options h4 {

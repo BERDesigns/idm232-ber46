@@ -1,5 +1,16 @@
 <?php
   include "includes/init.php";
+
+  $query_result = isset($_GET["search"]) ? $_GET["search"] : null;
+
+  if(isset($_GET["search"])) {
+    echo "<title>AEAT | Search - $query_result</title>";
+  }
+  else {
+    echo "<title>AEAT | Search</title>";
+  }
+
+  include "includes/_header_b.php";
 ?>
 <div id="searchbar-div">
   <img id="filter-icon" src="img/filter.png"></img>
@@ -13,12 +24,11 @@
     <li>Vegan</li>
     <li>Vegetarian</li>
     <li>Pescatarian</li>
-    <li>Lactose Intolerant</li>
+    <li>Dairy-Free</li>
     <li>Gluten-Free</li>
   </ul>
 </div>
 <?php
-  $query_result = isset($_GET["search"]) ? $_GET["search"] : null;
   $query_result_orig = $query_result;
   $query_result = mysqli_real_escape_string($connection, $query_result);
 
