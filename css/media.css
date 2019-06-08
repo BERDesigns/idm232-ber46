@@ -64,11 +64,10 @@
 
   .card-holder {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
   }
 
-  .card-holder-end {
-    grid-template-rows: auto;
+  .card {
+    width: 90%;
   }
 
   #last-card {
@@ -84,6 +83,10 @@
   #filter-icon {
     width: 3%;
     height: 3%;
+  }
+
+  #results-num {
+    margin-left: 1.5em;
   }
 
   .ingredients-list-div {
@@ -136,7 +139,6 @@
 
   .card-holder {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
   }
 
   #last-card {

@@ -9,13 +9,17 @@
   else {
     $query = 'SELECT * ';
     $query .= 'FROM recipes ';
-    $query .= "WHERE id = '{$id}' ";
+    $query .= "WHERE id = '$id' ";
     $query .= 'LIMIT 1';
 
     $result = mysqli_query($connection, $query);
 
     if (!$result) {
       die('Database query failed.');
+    }
+
+    if (check_in_db($id, "id", $connection) == False) {
+      redirect_to("index.php");
     }
   }
   while ($recipe = mysqli_fetch_assoc($result)) {

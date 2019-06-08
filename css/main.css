@@ -206,7 +206,6 @@ details[open] summary::-webkit-details-marker {
   justify-items: center;
   width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
   margin-bottom: 1em;
 }
 
@@ -384,7 +383,7 @@ li {
   font-size: 16px;
   background-color: #00000000;
   background-image: url('../img/search.png');
-  background-position: 6px 8px;
+  background-position: 8px 8px;
   background-size: 16px 16px;
   background-repeat: no-repeat;
   padding: 6px;
@@ -396,6 +395,7 @@ li {
   color: #000;
   width: 120%;
   background-color: var(--main-accent-color);
+  background-image: url('../img/search_sec.png');
 }
 
 .filter-ul li {
@@ -425,6 +425,10 @@ li {
 
 #filters-options h4 {
   margin: 0;
+}
+
+#results-num {
+  margin-left: 10%;
 }
 
 .card-holder-search {

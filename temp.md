@@ -1,19 +1,17 @@
-Case Study, boiii
+Note that says I did Extra Credit + In-Depth (able to add / remove indiv. steps)
 
-Repo should include a copy of your .sql database
+Case Study, boiii
 
 TO DO:
 
-Check pages to see if data is input correctly (some don't have step names, which can break my formatting)
-
 Add filters for recipes to SQL + add functionality of filters to site
-
-Ensure ppl can't insert SQL into the search tab or anything to break my DB
 
 EXTRA CREDIT:
 
 Insert CMS structure
 
 Allow people to add or remove steps, and auto-format it
+
+mysqli_real_escape_string($connection, $query_result) for ALL updates
 
 Auto-format / rename pictures

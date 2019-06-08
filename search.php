@@ -19,6 +19,8 @@
 </div>
 <?php
   $query_result = isset($_GET["search"]) ? $_GET["search"] : null;
+  $query_result_orig = $query_result;
+  $query_result = mysqli_real_escape_string($connection, $query_result);
 
   if (!$query_result) {
     $query = 'SELECT * ';
@@ -35,48 +37,38 @@
     die('Database query failed.');
   }
   elseif (mysqli_num_rows($result) == 0) {
-    echo '<div id="main-desc" class="main-desc-search">
-            <div id="spacing-div-search-no-results">
-              <h2 class="title">Sorry, but we couldn\'t find anything!</h2>
-              <p>Try checking your spelling. You can also try words with a similar meaning, like "tart" instead of "pie".
+    echo "<div id=\"main-desc\" class=\"main-desc-search\">
+            <div id=\"spacing-div-search-no-results\">
+              <h2 class=\"title\">Sorry, but we couldn't find anything matching $query_result_orig!</h2>
+              <p>Try checking your spelling. You can also try words with a similar meaning, like \"tart\" instead of \"pie\".
             </div>
-          </div>';
+          </div";
   }
   else {
   echo '<div class="results-holder">';
-  $i = 1;
   $num_rows = mysqli_num_rows($result);
-  while ($recipe = mysqli_fetch_assoc($result)) {
-    if ((($i % 4) == 1) && (($num_rows - $i - 1) > 0)) {
-?>
-    <div class="card-holder card-holder-search">
-<?php }  elseif ((($i % 4) == 1) && (($num_rows - $i) <= 1)) {?>
-  <div class="card-holder card-holder-search card-holder-end">
-<?php }
-      ?>
-      <div class="card">
-        <a href="recipe.php?id=<?php echo $recipe['id'] ?>">
-          <img class="card-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']?>/beauty_pic.jpg">
-          <div class="container">
-            <h4 class="title card-text"><?php echo $recipe['title']; ?></h4>
-            <p class="card-text">with <?php echo $recipe['side']; ?></p>
-          </div>
-        </a>
-      </div>
+  if( mysqli_num_rows($result) != db_size($connection)) { ?>
+    <h2 class="title" id="results-num"><?php echo "$num_rows results found for $query_result_orig!"; ?></h2>
+  <?php } ?>
+  <div class="card-holder card-holder-search">
+  <?php while ($recipe = mysqli_fetch_assoc($result)) { ?>
+    <div class="card">
+      <a href="recipe.php?id=<?php echo $recipe['id'] ?>">
+        <img class="card-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']?>/beauty_pic_500.jpg">
+        <div class="container">
+          <h4 class="title card-text"><?php echo $recipe['title']; ?></h4>
+          <p class="card-text">with <?php echo $recipe['side']; ?></p>
+        </div>
+      </a>
+    </div>
   <?php
-    if (($i % 4) == 0) {
-  ?>
-  </div>
-  <?php }
-        $i++;
-      } //end while loop.
-      if (!($num_rows % 4 == 0)) {
-        echo '</div>';
-      }
-      echo '</div>';
+      } // End while loop.
+      echo "</div>";
     }
     mysqli_free_result($result);
 ?>
+
+  </div>
 <script src ="js/function_filter.js"></script>
 
 <?php include "includes/_footer.php"; ?>
