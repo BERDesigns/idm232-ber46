@@ -40,7 +40,7 @@ details[open] summary::-webkit-details-marker {
 }
 
 #main-pg {
-  transition: all 0.3s ease-in-out 0.15s;
+  transition: all 0.3s ease-in-out;
 }
 
 .hidden {
@@ -386,7 +386,7 @@ li {
   background-color: var(--main-bg-color);
   z-index: -5;
   position: absolute;
-  transition: all 0.3s ease-in-out 0.15s;
+  transition: all 0.3s ease-in-out;
 }
 
 #searchbar-div input[type=text] {
@@ -455,7 +455,7 @@ li {
   padding-right: 1em;
   position: absolute;
   z-index: -10;
-  transition: all 0.3s ease-in-out 0.15s;
+  transition: all 0.3s ease-in-out;
 }
 
 #filters-options h4 {
@@ -473,7 +473,7 @@ li {
 
 .results-holder {
   margin-top: 1em;
-  transition: all 0.3s ease-in-out 0.15s;
+  transition: all 0.3s ease-in-out;
 }
 
 /*
