@@ -10,24 +10,8 @@
     echo "<title>AEAT | Search</title>";
   }
 
-  include "includes/_header_b.php";
+  include "includes/_header_search.php";
 ?>
-<div id="searchbar-div">
-  <img id="filter-icon" src="img/filter.png"></img>
-  <form id="search-form">
-    <input type="text" name="search">
-  </form>
-</div>
-<div id="filters-options">
-  <h4>Dietary Restrictions</h4>
-  <ul class="filter-ul">
-    <li>Vegan</li>
-    <li>Vegetarian</li>
-    <li>Pescatarian</li>
-    <li>Dairy-Free</li>
-    <li>Gluten-Free</li>
-  </ul>
-</div>
 <?php
   $query_result_orig = $query_result;
   $query_result = mysqli_real_escape_string($connection, $query_result);
@@ -79,6 +63,4 @@
 ?>
 
   </div>
-<script src ="js/function_filter.js"></script>
-
 <?php include "includes/_footer.php"; ?>

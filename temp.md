@@ -4,7 +4,7 @@ Case Study, boiii
 
 TO DO:
 
-Add filters for recipes to SQL + add functionality of filters to site
+Add functionality of filters to site
 
 Use JS for this shit maybe? Should be easier than AJAX. Wait... that's what AJAX is, dummy!
 
@@ -14,7 +14,7 @@ Keep display: none; in a class named Hidden
 
 On click, toggle a function that checks if an el has class "Hidden" to remove need for conditional checker var
 
-Possibly make Search automatically show up on pg
+Possibly make Search automatically show up on pg (this would also use AJAX, but would require me to rewrite whole search pg)
 
 EXTRA CREDIT:
 

@@ -1,6 +1,27 @@
+@media screen and (max-width: 600px) {
+  #searchbar-div {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #searchbar-div input[type=text] {
+    width: 100%;
+  }
+  #searchbar-div input[type=text]:focus {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 580px) {
   #amazing-btn {
     width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #search-form {
+    width: 90%;
   }
 }
 
@@ -87,6 +108,7 @@
 
   #results-num {
     margin-left: 1.5em;
+    margin-right: 1.5em;
   }
 
   .ingredients-list-div {

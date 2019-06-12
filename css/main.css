@@ -39,6 +39,14 @@ details[open] summary::-webkit-details-marker {
     color: transparent;
 }
 
+#main-pg {
+  transition: all 0.3s ease-in-out 0.15s;
+}
+
+.hidden {
+  display: none;
+}
+
 .title {
   font-size: 1.25em;
   font-family: var(--title-font);
@@ -357,16 +365,6 @@ li {
   transform: translate(-50%,-50%);
 }
 
-#searchbar-div {
-  display: flex;
-  align-items: center;
-  padding: 0.5em;
-  padding-top: 0em;
-  padding-bottom: 0.75em;
-  background-color: var(--main-bg-color);
-  z-index: 50;
-}
-
 #filter-icon {
   width: 1.3em;
   height: 1.3em;
@@ -375,8 +373,24 @@ li {
   cursor: pointer;
 }
 
+#search-form {
+  display: flex;
+}
+
+#searchbar-div {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  padding-top: 0em;
+  padding-bottom: 0.75em;
+  background-color: var(--main-bg-color);
+  z-index: -5;
+  position: absolute;
+  transition: all 0.3s ease-in-out 0.15s;
+}
+
 #searchbar-div input[type=text] {
-  width: 20px;
+  width: 120%;
   color: var(--main-accent-color);
   border: none;
   border-bottom: 2px solid var(--main-accent-color);
@@ -398,6 +412,28 @@ li {
   background-image: url('../img/search_sec.png');
 }
 
+#searchbar-div input[type=submit] {
+  border: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--main-bg-color);
+  padding: 0.5em;
+  background-color: var(--main-accent-color);
+  font-family: var(--title-font);
+  border-radius: 2em;
+  margin: auto;
+  width: 12em;
+  font-size: 0.8em;
+  margin-left: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+#searchbar-div input[type=submit]:hover {
+  color: var(--main-accent-color);
+  background-color: var(--main-bg-color);
+}
+
 .filter-ul li {
   cursor: pointer;
   display: inline-block;
@@ -414,14 +450,12 @@ li {
 #filters-options {
   color: var(--main-accent-color);
   background-color: var(--main-bg-color);
-  width: 100%;
   padding-top: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
   position: absolute;
-  top: -50%;
   z-index: -10;
-  transition: top 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out 0.15s;
 }
 
 #filters-options h4 {
@@ -430,6 +464,7 @@ li {
 
 #results-num {
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 .card-holder-search {

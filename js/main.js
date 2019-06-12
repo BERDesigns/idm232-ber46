@@ -1,4 +1,6 @@
-// Change the main-page div's minimum height to be the full pg height minus the header and footer, ensures that the page footer doesn't show up too early.
+document.getElementById("filters-options").style.width = window.innerWidth - 32 + "px";
+document.getElementById("searchbar-div").style.width = window.innerWidth - 16 + "px";
+
 document.getElementById("main-pg").style.minHeight = (window.innerHeight - document.getElementById("navbar-header").getBoundingClientRect().height - document.getElementById("navbar-header").getBoundingClientRect().height) + "px";
 
 document.getElementById("dd-menu-div").addEventListener("click", function() {
@@ -10,5 +12,3 @@ document.getElementById("x-mark-pullout-menu").addEventListener("click", functio
     document.getElementById("dd-menu-pullout-menu").style.left = "100%"; // Push the main dropdown rightwards, outside of the client.
     document.getElementById("x-mark-pullout-menu").style.right = "-100%";
   }, false);
-
-var filtOut = false;

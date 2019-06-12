@@ -34,13 +34,13 @@
       <a class="menu-item" href="help.php">Help</a>
     </div>
     <div id="searchbar-div">
-      <img id="filter-icon" class="hidden" src="img/filter.png"></img>
+      <img id="filter-icon" src="img/filter.png"></img>
       <form id="search-form" action="search.php">
         <input type="text" name="search">
         <input type="submit" value="Submit">
       </form>
     </div>
-    <div id="filters-options" class="hidden">
+    <div id="filters-options">
       <h4>Dietary Restrictions</h4>
       <ul class="filter-ul">
         <li>Vegan</li>
