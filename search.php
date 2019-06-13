@@ -63,5 +63,5 @@
 ?>
 
   </div>
-<?php include "includes/filters.php"; ?>
+<script src ="js/search_init.js"></script>
 <?php include "includes/_footer.php"; ?>

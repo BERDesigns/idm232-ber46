@@ -28,8 +28,11 @@ function showResults(str) {
       fixedStr = fixedStr.replace("]", "");
       var strArray = fixedStr.split(",");
       for(var i = 0 ; i < strArray.length ; i++) {
-        console.log(strArray[i]);
+        if(document.getElementById("recipe-" + strArray[i])) {
+          showSelectCard("hidden", strArray[i]);
+        }
       }
+      document.getElementById("main-pg").style.height = document.getElementsByClassName("results-holder")[0].offsetHeight + document.getElementById("searchbar-div").offsetHeight + document.getElementById("filters-options").offsetHeight + "px"; // Adjust the height of the results holder accordingly to push the footer downwards.
     }
   };
   xhttp.open("GET", "includes/getrecipes.php?q="+str, true);
@@ -53,6 +56,6 @@ function hideAllCards(cardClassName, hideClassName) {
 }
 
 //Remove a given class <wipeClassName> from all elements on a page of class <cardClassName> with given id <id>
-function showSelectCard(cardClassName, hideClassName, id) {
+function showSelectCard(hideClassName, id) {
   document.getElementById("recipe-" + id).classList.remove(hideClassName);
 }

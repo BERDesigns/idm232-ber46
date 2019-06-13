@@ -1,5 +1,13 @@
-document.getElementById("filters-options").style.width = window.innerWidth - 32 + "px";
-document.getElementById("searchbar-div").style.width = window.innerWidth - 16 + "px";
+var tabletMode = window.matchMedia("(min-width: 768px) and (max-width: 1279px)");
+
+if (tabletMode == true) {
+  document.getElementById("filters-options").style.width = window.innerWidth - 40 + "px";
+  document.getElementById("searchbar-div").style.width = window.innerWidth - 20 + "px";
+}
+else {
+  document.getElementById("filters-options").style.width = window.innerWidth - 32 + "px";
+  document.getElementById("searchbar-div").style.width = window.innerWidth - 16 + "px";
+}
 
 document.getElementById("main-pg").style.minHeight = (window.innerHeight - document.getElementById("navbar-header").getBoundingClientRect().height - document.getElementById("navbar-header").getBoundingClientRect().height) + "px";
 
@@ -16,6 +24,14 @@ document.getElementById("x-mark-pullout-menu").addEventListener("click", functio
 /*
 EVERYTHING AFTER THIS POINT IS JS FOR MAKING THE FILTER AND SEARCH BARS DISPLAY PROPERLY.
 */
+
+var offset;
+if(tabletMode == true) {
+  offset = 12;
+}
+else {
+  offset = 0;
+}
 
 document.getElementById("filters-options").style.top = "-300px";
 setTimeout(function(){ document.getElementById("filters-options").style.top = document.getElementById("navbar-header").getBoundingClientRect().bottom-document.getElementById("filters-options").offsetHeight+"px"; }, 300);
@@ -85,26 +101,3 @@ document.getElementById("filter-icon").addEventListener("click", function() {
         filtOut = false;
       }
     }, false);
-
-setTimeout(function(){
-  document.getElementById("searchbar-div").style.top = "48px"; // Set the top of the Filters dropdown to the bottom of the Searchbar div (the element that goes above it).
-  document.getElementById("main-pg").style.transform = "translateY(" + document.getElementById("searchbar-div").offsetHeight + "px)"; // Transform the search results as the filters tab gets pushed downwards.
-  if (resizePgOnSearch == true) {
-    document.getElementById("main-pg").style.height = document.getElementById("main-pg").offsetHeight + document.getElementById("searchbar-div").offsetHeight + "px"; // Adjust the height of the results holder accordingly to push the footer downwards.
-  }
-  setTimeout(function(){ document.getElementById("searchbar-div").style.zIndex = 50; }, 300);
-  searchOut = true;
-
-  document.getElementById("filters-options").style.top = "93px"; // Set the top of the Filters dropdown to the bottom of the Searchbar div (the element that goes above it).
-  var filtOffset = document.getElementById("filters-options").offsetHeight + document.getElementById("searchbar-div").offsetHeight;
-  document.getElementById("main-pg").style.transform = "translateY(" + filtOffset + "px)"; // Transform the search results as the filters tab gets pushed downwards.
-  if (resizePgOnFilters == true){
-    document.getElementById("main-pg").style.height = document.getElementById("main-pg").offsetHeight + document.getElementById("filters-options").offsetHeight + "px"; // Adjust the height of the results holder accordingly to push the footer downwards.
-  }
-  setTimeout(function(){ document.getElementById("filters-options").style.zIndex = 0; }, 300);
-  filtOut = true;
-}, 300);
-
-/*
-EVERYTHING AFTER THIS POINT IS JS FOR MAKING THE FILTERS WORK PROPERLY.
-*/
