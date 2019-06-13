@@ -97,10 +97,6 @@
     grid-column: 1 / span 2;
   }
 
-  #footer-text {
-    margin-top: 0.75em;
-  }
-
   #filter-icon {
     width: 1.1em;
     height: 1.1em;
@@ -128,10 +124,6 @@
   }
   #amazing-btn {
     width: 32%;
-  }
-
-  #footer-text {
-    margin-top: 0.35em;
   }
 
   #index-welcome {

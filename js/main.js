@@ -1,6 +1,6 @@
 var tabletMode = window.matchMedia("(min-width: 768px) and (max-width: 1279px)");
 
-if (tabletMode == true) {
+if (tabletMode.matches) {
   document.getElementById("filters-options").style.width = window.innerWidth - 40 + "px";
   document.getElementById("searchbar-div").style.width = window.innerWidth - 20 + "px";
 }
@@ -26,11 +26,15 @@ EVERYTHING AFTER THIS POINT IS JS FOR MAKING THE FILTER AND SEARCH BARS DISPLAY 
 */
 
 var offset;
-if(tabletMode == true) {
+if(tabletMode.matches) {
   offset = 12;
 }
 else {
   offset = 0;
+}
+
+function getOffset() {
+  return offset;
 }
 
 document.getElementById("filters-options").style.top = "-300px";
