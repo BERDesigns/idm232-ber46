@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jun 13, 2019 at 02:42 AM
+-- Generation Time: Jun 08, 2019 at 11:51 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `aeat-proj`
 --
-CREATE DATABASE IF NOT EXISTS `aeat-proj` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `aeat-proj`;
 
 -- --------------------------------------------------------
 

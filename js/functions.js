@@ -17,6 +17,7 @@ function showResults(str) {
   var xhttp;
   if (str == "") {
     wipeCards("card", "hidden");
+    document.getElementById("main-pg").style.height = document.getElementsByClassName("results-holder")[0].offsetHeight + document.getElementById("searchbar-div").offsetHeight + document.getElementById("filters-options").offsetHeight + "px"; // Adjust the height of the results holder accordingly to push the footer downwards.
     return;
   }
   wipeCards("card", "hidden");

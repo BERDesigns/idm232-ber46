@@ -381,7 +381,6 @@ ul {
   background-color: var(--main-bg-color);
   z-index: -5;
   position: absolute;
-  transform: translateY(-2px);
   transition: all 0.3s ease-in-out;
 }
 
@@ -466,7 +465,6 @@ ul {
   padding-right: 1em;
   position: absolute;
   z-index: -10;
-  transform: translateY(-4px);
   transition: all 0.3s ease-in-out;
 }
 
@@ -520,6 +518,7 @@ ul {
   font-family: var(--title-font);
   border-radius: 2em;
   font-size: 0.5em;
+  z-index: 150;
   transition: background-color 0.3s ease-in-out;
 }
 

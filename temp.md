@@ -2,20 +2,6 @@ Note that says I did Extra Credit + In-Depth (able to add / remove indiv. steps)
 
 Case Study, boiii
 
-TO DO:
-
-Add functionality of filters to site
-
-Use JS for this shit maybe? Should be easier than AJAX. Wait... that's what AJAX is, dummy!
-
-Use DISPLAY: NONE + AJAX for displaying shit
-
-Keep display: none; in a class named Hidden
-
-On click, toggle a function that checks if an el has class "Hidden" to remove need for conditional checker var
-
-FILTER + SEARCH SPACING IS BROKEN ON TABLET
-
 EXTRA CREDIT:
 
 Insert CMS structure
