@@ -14,6 +14,8 @@ Keep display: none; in a class named Hidden
 
 On click, toggle a function that checks if an el has class "Hidden" to remove need for conditional checker var
 
+FILTER + SEARCH SPACING IS BROKEN ON TABLET
+
 EXTRA CREDIT:
 
 Insert CMS structure

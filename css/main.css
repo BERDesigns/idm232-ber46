@@ -264,11 +264,6 @@ ul {
   padding-left: 0;
 }
 
-li {
-  list-style-type: none;
-  margin: 0 0 0.5em 0;
-}
-
 .later-recipe-img {
   width: 100%;
   margin: auto;
@@ -434,7 +429,17 @@ li {
   background-color: var(--main-bg-color);
 }
 
-.filter-ul li {
+.filter-form {
+  padding: 1em;
+}
+
+.filter-form input[type=checkbox] {
+  display: none;
+}
+
+.filter-form label {
+  list-style-type: none;
+  margin: 0 0 0.5em 0;
   cursor: pointer;
   display: inline-block;
   color: var(--main-bg-color);
@@ -443,8 +448,13 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-.filter-ul li:hover {
+.filter-form input[type=checkbox] + label:hover {
   opacity: 0.6;
+}
+
+.filter-form input[type=checkbox]:checked + label {
+  color: var(--main-accent-color);
+  background-color: var(--main-bg-color);
 }
 
 #filters-options {

@@ -46,7 +46,7 @@
   <?php } ?>
   <div class="card-holder card-holder-search">
   <?php while ($recipe = mysqli_fetch_assoc($result)) { ?>
-    <div class="card">
+    <div class="card" id="recipe-<?php echo $recipe['id'] ?>">
       <a href="recipe.php?id=<?php echo $recipe['id'] ?>">
         <img class="card-img" src="img/recipe_pics/<?php echo $recipe['recipe_folder']?>/beauty_pic_500.jpg">
         <div class="container">
@@ -63,4 +63,5 @@
 ?>
 
   </div>
+<?php include "includes/filters.php"; ?>
 <?php include "includes/_footer.php"; ?>

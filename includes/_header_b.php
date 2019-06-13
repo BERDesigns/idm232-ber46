@@ -42,12 +42,12 @@
     </div>
     <div id="filters-options" class="hidden">
       <h4>Dietary Restrictions</h4>
-      <ul class="filter-ul">
-        <li>Vegan</li>
-        <li>Vegetarian</li>
-        <li>Pescatarian</li>
-        <li>Dairy-Free</li>
-        <li>Gluten-Free</li>
-      </ul>
+      <form class="filter-form" action="">
+        <input id="veg-check" type="checkbox" name="filtersList" value="vegan" onclick="selectOnlyThis(this)"><label for="veg-check">Vegan</label>
+        <input id="vegt-check" type="checkbox" name="filtersList" value="vegetarian" onclick="selectOnlyThis(this)"><label for="vegt-check">Vegetarian</label>
+        <input id="pesc-check" type="checkbox" name="filtersList" value="pescatarian" onclick="selectOnlyThis(this)"><label for="pesc-check">Pescatarian</label>
+        <input id="df-check" type="checkbox" name="filtersList" value="dairy-free" onclick="selectOnlyThis(this)"><label for="df-check">Dairy-Free</label>
+        <input id="gf-check" type="checkbox" name="filtersList" value="gluten-free" onclick="selectOnlyThis(this)"><label for="gf-check">Gluten-Free</label>
+      </form>
     </div>
     <div id="main-pg">
