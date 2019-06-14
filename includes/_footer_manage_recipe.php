@@ -4,6 +4,6 @@
         <a id="admin-btn" href="admin.php">Admin</a>
       </div>
       <script src ="js/main_all_admin.js"></script>
-      <script src ="js/main_admin.js"></script>
+      <script src ="js/main_manage_recipe.js"></script>
     </body>
 </html>

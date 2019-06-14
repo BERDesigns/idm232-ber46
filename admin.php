@@ -201,13 +201,14 @@
     }
   }
 ?>
+  <?php include 'includes/_aside.php'; ?>
   <main class="col-md-9 admin-main">
       <?php
         if (isset($message)) {
           echo "<p>{$message}</p>";
         }
        ?>
-      <h1>Add Recipe</h1>
+      <h2>Add Recipe</h2>
       <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
         <div class="form-recipeHero">
           <label for="recipeHero">Recipe Hero Image<br /><span class="desc-class">Must be a JPG.</span></label>

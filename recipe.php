@@ -1,7 +1,7 @@
 <?php
   include "includes/init.php";
 
-  $id = isset($_GET["id"]) ? $_GET["id"] : null;
+  $id = isset($_GET["id"]) ? mysqli_real_escape_string($connection, $_GET["id"]) : null;
 
   if (!$id) {
     redirect_to("index.php");
@@ -69,5 +69,6 @@
   </div>
 <?php } ?>
 </div>
-<?php } // Ending the while loop. ?>
+<?php } // Ending the while loop.
+mysqli_free_result($result); ?>
 <?php include "includes/_footer.php"; ?>
