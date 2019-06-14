@@ -526,3 +526,52 @@ ul {
   background-color: var(--main-bg-color);
   color: var(--main-accent-color);
 }
+
+/*
+====================================
+             ADMIN
+====================================
+*/
+
+.desc-class {
+  font-weight: 200;
+}
+
+.filters-span {
+  padding: 0.5em;
+}
+
+.admin-card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  padding: 0em 1em 1em 1em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.admin-card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.admin-card > .list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.admin-card > .list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.admin-main {
+  padding-bottom: 1em;
+}

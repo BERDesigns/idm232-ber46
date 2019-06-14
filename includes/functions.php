@@ -97,4 +97,13 @@ function create_pairs_arr($arr) {
   }
   return $final_arr;
 }
+
+// Returns a double-digit version of a given integer.
+function make_dd($int) {
+  if($int < 10) {
+    return "0" . $int;
+  } else {
+    return $int;
+  }
+}
 ?>
